@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "test": "mocha src/test/index.js -w",
-    "test:no-watch": "mocha src/test/index.js",
+    "test:no-watch": "istanbul cover -x *test.js _mocha --R spec src/test/index.js",
     "semantic": "semantic-release-cli",
     "semantic-release": "semantic-release",
     "travis-deploy-once": "travis-deploy-once",
@@ -39,6 +39,7 @@
     "commitizen": "3.0.4",
     "cz-conventional-changelog": "2.1.0",
     "husky": "1.1.2",
+    "istanbul": "0.4.5",
     "mocha": "5.2.0",
     "semantic-release": "^15.10.6",
     "semantic-release-cli": "4.0.9",
