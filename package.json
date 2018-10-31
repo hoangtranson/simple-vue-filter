@@ -1,5 +1,5 @@
 {
-  "name": "vue-filter",
+  "name": "simple-vue-filter",
   "version": "1.0.0",
   "description": "Set of filter for Vuejs",
   "main": "src/index.js",
