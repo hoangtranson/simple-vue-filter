@@ -5,7 +5,9 @@
   "main": "src/index.js",
   "scripts": {
     "test": "mocha src/test/index.js -w",
-    "test:no-watch": "mocha src/test/index.js",
+    "test:no-watch": "istanbul cover -x *test.js _mocha --R spec src/test/index.js",
+    "check-coverage": "istanbul check-coverage --statements 80 --branches 80 --functions 80 --lines 80",
+    "report-coverage": "cat ./coverage/lcov.info | codecov",
     "semantic": "semantic-release-cli",
     "semantic-release": "semantic-release",
     "travis-deploy-once": "travis-deploy-once",
@@ -36,9 +38,11 @@
   "homepage": "https://github.com/hoangtranson/vue-filter#readme",
   "devDependencies": {
     "chai": "4.2.0",
+    "codecov.io": "0.1.6",
     "commitizen": "3.0.4",
     "cz-conventional-changelog": "2.1.0",
     "husky": "1.1.2",
+    "istanbul": "0.4.5",
     "mocha": "5.2.0",
     "semantic-release": "^15.10.6",
     "semantic-release-cli": "4.0.9",
