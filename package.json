@@ -1,0 +1,22 @@
+{
+  "name": "vue-filter",
+  "version": "1.0.0",
+  "description": "Set of filter for Vuejs",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoangtranson/vue-filter.git"
+  },
+  "keywords": [
+    "Vuejs"
+  ],
+  "author": "Hoang Tran <Hayden.tran.d@gmail.com> (https://github.com/hoangtranson)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hoangtranson/vue-filter/issues"
+  },
+  "homepage": "https://github.com/hoangtranson/vue-filter#readme"
+}
