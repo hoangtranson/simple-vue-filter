@@ -1,14 +1,23 @@
 {
   "name": "simple-vue-filter",
-  "version": "1.1.0",
+  "version": "0.0.0-development",
   "description": "Set of filter for Vuejs",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha src/test/index.js -w"
+    "test": "mocha src/test/index.js -w",
+    "semantic": "semantic-release-cli",
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once",
+    "commit": "git add . && git-cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hoangtranson/vue-filter.git"
+    "url": "https://github.com/hoangtranson/vue-filter.git"
   },
   "keywords": [
     "Vuejs"
@@ -21,6 +30,11 @@
   "homepage": "https://github.com/hoangtranson/vue-filter#readme",
   "devDependencies": {
     "chai": "4.2.0",
-    "mocha": "5.2.0"
+    "commitizen": "3.0.4",
+    "cz-conventional-changelog": "2.1.0",
+    "mocha": "5.2.0",
+    "semantic-release": "^15.10.6",
+    "semantic-release-cli": "4.0.9",
+    "travis-deploy-once": "^5.0.9"
   }
 }
