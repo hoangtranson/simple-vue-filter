@@ -6,13 +6,14 @@ notifications:
   email: false
 node_js:
   - '10'
-  - '9'
-  - '8'
-  - '6'
+before_install:
+  - npm i
+before_script:
+  - npm prune
 script:
-  npm run test
+  - npm run test:no-watch
 after_success:
   - npm run travis-deploy-once "npm run semantic-release"
 branches:
-  except:
-    - /^v\d+\.\d+\.\d+$/
+  only:
+    - master

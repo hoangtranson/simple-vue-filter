@@ -5,6 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "test": "mocha src/test/index.js -w",
+    "test:no-watch": "mocha src/test/index.js",
     "semantic": "semantic-release-cli",
     "semantic-release": "semantic-release",
     "travis-deploy-once": "travis-deploy-once",
