@@ -16,6 +16,11 @@
       "path": "cz-conventional-changelog"
     }
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run test:no-watch"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/hoangtranson/vue-filter.git"
@@ -33,6 +38,7 @@
     "chai": "4.2.0",
     "commitizen": "3.0.4",
     "cz-conventional-changelog": "2.1.0",
+    "husky": "1.1.2",
     "mocha": "5.2.0",
     "semantic-release": "^15.10.6",
     "semantic-release-cli": "4.0.9",
