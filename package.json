@@ -4,7 +4,7 @@
   "description": "Set of filter for Vuejs",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha src/test/index.js -w"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/hoangtranson/vue-filter/issues"
   },
-  "homepage": "https://github.com/hoangtranson/vue-filter#readme"
+  "homepage": "https://github.com/hoangtranson/vue-filter#readme",
+  "devDependencies": {
+    "chai": "4.2.0",
+    "mocha": "5.2.0"
+  }
 }

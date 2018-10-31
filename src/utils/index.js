@@ -1,4 +1,4 @@
-export const toNumber = num => {
+const toNumber = num => {
   if (typeof num !== 'string') {
     return num;
   } else {
@@ -7,4 +7,8 @@ export const toNumber = num => {
       ? num
       : parsed
   }
+}
+
+module.exports = {
+  toNumber
 }
