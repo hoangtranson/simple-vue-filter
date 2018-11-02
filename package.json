@@ -11,7 +11,7 @@
     "semantic": "semantic-release-cli",
     "semantic-release": "semantic-release",
     "travis-deploy-once": "travis-deploy-once",
-    "commit": "git add . && git-cz"
+    "commit": "git-cz"
   },
   "config": {
     "commitizen": {
