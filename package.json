@@ -18,11 +18,6 @@
       "path": "cz-conventional-changelog"
     }
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run test:no-watch"
-    }
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/hoangtranson/vue-filter.git"

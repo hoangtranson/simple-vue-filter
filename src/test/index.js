@@ -1,5 +1,6 @@
 const chai = require('chai');
 const arrayFilters = require('../array/index');
+const stringFilters = require('../string/index');
 
 const { expect } = chai;
 
@@ -45,5 +46,16 @@ describe('limitBy with array = [1,2,3]', () => {
   it('limitBy(array, 3, 3) => []', () => {
     const res = limitBy(array, 3, 3);
     expect(res).to.deep.equal([]);
+  })
+})
+
+describe('capitalize', () => {
+  const { capitalize } = stringFilters;
+  const text = 'test';
+
+  it('test => Test', () => {
+    const res = capitalize(text);
+    expect(res.charAt(0)).to.be.equal('T');
+    expect(res.slice(1)).to.be.equal('est');
   })
 })
