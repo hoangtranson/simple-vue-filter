@@ -14,7 +14,7 @@ script:
   - npm run test:no-watch
 after_success:
   - npm run report-coverage
-  - npm run travis-deploy-once "npm run semantic-release" && npm publish
+  - npm run travis-deploy-once && npm publish
 branches:
   only:
     - master
