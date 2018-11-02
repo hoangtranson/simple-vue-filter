@@ -1,5 +1,8 @@
-# vue-filter [![Build Status](https://travis-ci.org/hoangtranson/vue-filter.svg?branch=master)](https://travis-ci.org/hoangtranson/vue-filter.svg?branch=master)
+# vue-filter [![codecov](https://codecov.io/gh/hoangtranson/vue-filter/branch/master/graph/badge.svg)](https://codecov.io/gh/hoangtranson/vue-filter)
 
-The list of standard filters Vue 2
+Lead Maintainer - [Hoang Tran](https://github.com/hoangtranson)
 
 ## Installation
+
+
+## Documents
