@@ -1,4 +1,4 @@
-const toNumber = require('../utils/index');
+const utils = require('../utils/index');
 
 /**
  * Limit filter for arrays
@@ -8,7 +8,7 @@ const toNumber = require('../utils/index');
  */
 const limitBy = ( arr, n, offset) => {
   offset = offset ? parseInt(offset, 10) : 0;
-  n = toNumber(n);
+  n = utils.toNumber(n);
   return typeof n === 'number'
     ? arr.slice(offset, offset + n)
     : arr
